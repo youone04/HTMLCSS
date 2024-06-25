@@ -98,12 +98,12 @@ body {
     list-style: none;
     padding: 0;
     margin: 5;
-    text-align: center;
+    text-align: left;
 }
 
 .menu-banner nav ul li {
     display: block;
-    margin: 0 15px;
+    margin: 0 15px 20px;
 }
 
 .menu-banner nav ul li a {

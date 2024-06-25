@@ -1,5 +1,6 @@
 let lastScrollTop = 0;
 const menu = document.getElementById('menu');
+const menuBanner = document.getElementById('menu-banner');
 
 window.addEventListener('scroll', function() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -8,9 +9,11 @@ window.addEventListener('scroll', function() {
     if (scrollTop <= 0) {
         // User scrolls up
         menu.style.display = 'none';
+        menuBanner.style.display ='block'
     } else {
         // User scrolls down
         menu.style.display = 'block';
+        menuBanner.style.display = 'none'
     }
 
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
